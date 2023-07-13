@@ -17,6 +17,7 @@ function App() {
       );
       const jsonBody: Joke[] = await response.json();
       setJoke(jsonBody[0]);
+      console.log(jsonBody[0]);
     };
 
     fetchJoke();
